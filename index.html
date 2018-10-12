@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Stock Search Application</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron heading">
+            <h1 class="text-center">
+                <strong>
+                    <i class="fab fa-searchengin" id="heading-logo"></i>
+                    Stock Search Application
+                </strong>
+            </h1>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header search">
+                        <h3 class="card-title">
+                            <strong>
+                                <i class="far fa-list-alt"></i>
+                                Search Stock
+                            </strong>
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-9">
+                                <div class="row">
+                                    <div class="col-md-12" id="buttons-view"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="stock-input">
+                                                    <h5><strong>Stock Symbol</strong></h5>
+                                                </label>
+                                                <input type="text" class="form-control" id="stock-input" placeholder="Please enter a stock symbol">
+                                            </div>
+                                        </form>
+                                        <button class="btn event-btn" type="submit" id="add-btn">Add</button>
+                                        <button class="btn event-btn" type="submit" id="favorite-btn">
+                                            <i class="far fa-heart"></i>
+                                            Favorite
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="card-header favorite">
+                                        <h4 class="card-title text-center">
+                                            <strong>
+                                                <i class="far fa-star"></i>
+                                                Favorite
+                                            </strong>
+                                        </h4>
+                                    </div>
+                                    <div class="card-body favStocks"></div>
+                                </div>
+                                <button class="btn event-btn" type="submit" id="clear-btn">
+                                    <i class="far fa-trash-alt"></i>
+                                    Clear
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12" id="stock-result">
+                            <div class="card" id="stock-result">
+                                <div class="card-header stockInfo ">
+                                    <h6 class="card-title text-center my-auto ">
+                                        <strong>
+                                            Stock Info
+                                        </strong>
+                                    </h6>
+                                </div>
+                                <div class="card-body" id="stock-view"></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-md-12">
+                <hr>
+                <small>
+                    <h6 class="text-center footer">Copyright <i class="far fa-copyright"></i></h6>
+                </small>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

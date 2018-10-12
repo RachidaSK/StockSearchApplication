@@ -1,0 +1,71 @@
+.jumbotron.heading {
+    background: #23cd9a;
+}
+#heading-logo {
+    font-size: 40px;
+}
+#favorite-btn {
+    margin-left: 20px;
+}
+#clear-btn {
+    margin-top : 15px;
+    margin-left: 75px;
+}
+.card-header.search {
+    background: #23cd9a;
+}
+.card-header.favorite {
+    background: #210ce8;
+    color: #eee;
+}
+.card-body {
+    background:  #fff;
+}
+.form-group {
+    margin-top: 20px;
+}
+.event-btn {
+    background: #23cd9a;
+}
+.stock-btn {
+    background: #e8a50c;
+    padding: 5px ;
+    margin-right: 10px;
+}
+
+.fav-btn {
+    background: #ff000e;
+    padding: 5px ;
+    margin-right: 10px;
+}
+
+#stock-result {
+    margin-top: 20px;
+}
+.stockInfo {
+    background:#23cd9a;
+    padding: 0px 0px 0px;
+}
+table {
+    margin-top: 30px;
+}
+thead {
+    font-weight: bolder;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+span {
+    margin-right : 10px;
+}
+#sub-title {
+    color: #328682;
+}
+.news-list {
+    margin-top: 50px;
+}
+.footer {
+    background: #23cd9a;
+}
