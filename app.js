@@ -88,6 +88,7 @@ const displayInfo = function () {
     }).then(function (response) {
         console.log(queryUrl);
         console.log(response);
+        $("#stock-view").empty();
         //card body content html
         const cardBody = $('<h3>').addClass('card-title text-center');
         //Grab and append the company logo to the card body
